@@ -7,7 +7,7 @@
     "dev": "vite",
     "build": "tsc && vite build",
     "preview": "vite preview",
-    "lint": "eslint src/ --max-warnings=0",
+    "lint": "eslint --fix",
     "prepare": "husky install"
   },
   "husky": {
@@ -17,7 +17,7 @@
   },
   "lint-staged": {
     "src/**/*": [
-      "yarn lint --fix"
+      "npx eslint --fix"
     ]
   },
   "dependencies": {

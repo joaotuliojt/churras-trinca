@@ -1,10 +1,13 @@
+import { Routes, Route } from 'react-router-dom'
 import { resetCss } from '../stitches.config'
+import { Home } from './pages/Home'
+
 function App() {
   resetCss()
   return (
-    <div>
-      <h1>Hello World</h1>
-    </div>
+    <Routes>
+      <Route index element={<Home />} />
+    </Routes>
   )
 }
 

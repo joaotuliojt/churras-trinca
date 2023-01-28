@@ -20,7 +20,8 @@
   },
   "lint-staged": {
     "src/**/*": [
-      "npx eslint --fix"
+      "npx eslint --fix",
+      "yarn test"
     ]
   },
   "dependencies": {

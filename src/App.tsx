@@ -1,10 +1,13 @@
-import { useState } from 'react'
+import { Routes, Route } from 'react-router-dom'
+import { resetCss } from '../stitches.config'
+import { Home } from './pages/Home'
 
 function App() {
-  const [count, setCount] = useState(0)
-
+  resetCss()
   return (
-    <h1>Hello Wolrd</h1>
+    <Routes>
+      <Route index element={<Home />} />
+    </Routes>
   )
 }
 

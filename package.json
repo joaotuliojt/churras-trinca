@@ -21,14 +21,19 @@
   "lint-staged": {
     "src/**/*": [
       "npx eslint --fix",
-      "yarn test"
+      "yarn test --run --passWithNoTests"
     ]
   },
   "dependencies": {
+    "@hookform/resolvers": "^2.9.10",
     "@stitches/react": "^1.2.8",
+    "gsap": "^3.11.4",
+    "phosphor-react": "^1.4.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-router-dom": "^6.8.0"
+    "react-hook-form": "^7.42.1",
+    "react-router-dom": "^6.8.0",
+    "yup": "^0.32.11"
   },
   "devDependencies": {
     "@babel/core": "^7.20.12",

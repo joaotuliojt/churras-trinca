@@ -1,7 +1,6 @@
 <h1 align="center">Agenda de Churras<h1/>
-<p align="center">
-  <img width="100px" src="./public/favicon.svg"/>
-<p/>
+<img src="./public/assets/thumb.png"/>
+
 
 ## Descrição:
 Com os altos churrascos que a Trinca faz, alguns até mesmo sem justificativa e em dias aleatórios, propomos uma solução para podermos gerenciar esses churrascos.
@@ -44,6 +43,10 @@ yarn dev
 
 //Clique no link que surgir em seu terminal
 ```
+
+## Links
+> Figma: https://www.figma.com/file/xIi1BspCEtaH0hGEp39XQL/Trinca-%7C-Churras?node-id=1%3A1780&t=6nBShmKLFG2kYrBs-1
+> Preview: TODO
 
 ___
 <p align="center">

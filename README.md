@@ -45,8 +45,8 @@ yarn dev
 ```
 
 ## Links
-> Figma: https://www.figma.com/file/xIi1BspCEtaH0hGEp39XQL/Trinca-%7C-Churras?node-id=1%3A1780&t=6nBShmKLFG2kYrBs-1
-> Preview: TODO
+- Figma: https://www.figma.com/file/xIi1BspCEtaH0hGEp39XQL/Trinca-%7C-Churras?node-id=1%3A1780&t=6nBShmKLFG2kYrBs-1
+- Preview: TODO
 
 ___
 <p align="center">

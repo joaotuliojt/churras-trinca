@@ -13,8 +13,16 @@ export const {
   theme
 } = createStitches({
   theme: {
-    colors: {},
-    fonts: {}
+    colors: {
+      yellow: '#FFD836',
+      white: '#FAFAFA'
+    },
+    fonts: {
+      Raleway: '"Raleway", sans-serif'
+    },
+    transitions: {
+      default: 'ease all .3s'
+    }
   }
 })
 
@@ -30,6 +38,7 @@ export const resetCss = globalCss({
   body: {
     fontSize: '1.6rem',
     width: '100%',
-    minHeight: '100vh'
+    minHeight: '100vh',
+    fontFamily: '$Raleway'
   }
 })

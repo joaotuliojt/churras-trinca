@@ -1,0 +1,238 @@
+{
+  "barbecues": [
+    {
+      "id": "1",
+      "date": "2023-01-30T04:00:12.423Z",
+      "description": "Aniversário da Sara",
+      "comments": "É uma festa fantasia",
+      "total": "120.37",
+      "values": {
+        "withDrinks": "30",
+        "withoutDrinks": "20"
+      },
+      "participants": [
+        {
+          "name": "André",
+          "value": "20",
+          "withDrink": false
+        },
+        {
+          "name": "Sara",
+          "value": "30",
+          "withDrink": true
+        },
+        {
+          "name": "Bruno",
+          "value": "30",
+          "withDrink": true
+        },
+        {
+          "name": "Roberto",
+          "value": "20",
+          "withDrink": false
+        },
+        {
+          "name": "Carol",
+          "value": "20",
+          "withDrink": false
+        }
+      ],
+      "totalParticipants": 5
+    },
+    {
+      "id": "2",
+      "date": "2023-02-05T00:00:00.000Z",
+      "description": "Festa aleatória",
+      "comments": "Todos devem ir com roupas floridas",
+      "total": "120",
+      "values": {
+        "withDrinks": "30",
+        "withoutDrinks": "20"
+      },
+      "participants": [
+        {
+          "name": "André",
+          "value": "20",
+          "withDrink": false
+        },
+        {
+          "name": "Sara",
+          "value": "30",
+          "withDrink": true
+        },
+        {
+          "name": "Bruno",
+          "value": "30",
+          "withDrink": true
+        },
+        {
+          "name": "Roberto",
+          "value": "20",
+          "withDrink": false
+        },
+        {
+          "name": "Carol",
+          "value": "20",
+          "withDrink": false
+        }
+      ],
+      "totalParticipants": 5
+    },
+    {
+      "id": "3",
+      "date": "2023-06-05T00:00:00.000Z",
+      "description": "Pra que um motivo?",
+      "comments": "",
+      "total": "120",
+      "values": {
+        "withDrinks": "30",
+        "withoutDrinks": "20"
+      },
+      "participants": [
+        {
+          "name": "André",
+          "value": "20",
+          "withDrink": false
+        },
+        {
+          "name": "Sara",
+          "value": "30",
+          "withDrink": true
+        },
+        {
+          "name": "Bruno",
+          "value": "30",
+          "withDrink": true
+        },
+        {
+          "name": "Roberto",
+          "value": "20",
+          "withDrink": false
+        },
+        {
+          "name": "Carol",
+          "value": "20",
+          "withDrink": false
+        }
+      ],
+      "totalParticipants": 5
+    },
+    {
+      "id": "4",
+      "date": "2023-08-05T00:00:00.000Z",
+      "description": "Festa dos devs",
+      "comments": "Apenas programadores neste dia :p",
+      "total": "120",
+      "values": {
+        "withDrinks": "30",
+        "withoutDrinks": "20"
+      },
+      "participants": [
+        {
+          "name": "André",
+          "value": "20",
+          "withDrink": false
+        },
+        {
+          "name": "Sara",
+          "value": "30",
+          "withDrink": true
+        },
+        {
+          "name": "Bruno",
+          "value": "30",
+          "withDrink": true
+        },
+        {
+          "name": "Roberto",
+          "value": "20",
+          "withDrink": false
+        },
+        {
+          "name": "Carol",
+          "value": "20",
+          "withDrink": false
+        }
+      ],
+      "totalParticipants": 5
+    },
+    {
+      "id": "5",
+      "date": "2023-12-05T00:00:00.000Z",
+      "description": "Festa dos designers",
+      "comments": "Apenas designers neste dia :p",
+      "total": "120",
+      "values": {
+        "withDrinks": "30",
+        "withoutDrinks": "20"
+      },
+      "participants": [
+        {
+          "name": "André",
+          "value": "20",
+          "withDrink": false
+        },
+        {
+          "name": "Sara",
+          "value": "30",
+          "withDrink": true
+        },
+        {
+          "name": "Bruno",
+          "value": "30",
+          "withDrink": true
+        },
+        {
+          "name": "Roberto",
+          "value": "20",
+          "withDrink": false
+        },
+        {
+          "name": "Carol",
+          "value": "20",
+          "withDrink": false
+        }
+      ],
+      "totalParticipants": 5
+    },
+    {
+      "id": "6",
+      "date": "2023-12-05T00:00:00.000Z",
+      "description": "Festa da elite",
+      "comments": "Somente a elite é permitida >:)",
+      "total": "120",
+      "values": {
+        "withDrinks": "30",
+        "withoutDrinks": "20"
+      },
+      "participants": [
+        {
+          "name": "André",
+          "value": "20",
+          "withDrink": false
+        },
+        {
+          "name": "Sara",
+          "value": "30",
+          "withDrink": true
+        },
+        {
+          "name": "Bruno",
+          "value": "30",
+          "withDrink": true
+        },
+        {
+          "name": "Roberto",
+          "value": "20",
+          "withDrink": false
+        },
+        {
+          "name": "Carol",
+          "value": "20",
+          "withDrink": false
+        }
+      ],
+      "totalParticipants": 5
+    }
+  ]
+}

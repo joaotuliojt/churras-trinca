@@ -1,6 +1,7 @@
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 import path from 'path'
+import { esbuildCommonjs } from '@originjs/vite-plugin-commonjs'
 
 // https://vitejs.dev/config/
 export default defineConfig({
@@ -20,5 +21,10 @@ export default defineConfig({
         replacement: path.resolve(__dirname, './src/styles/stitches.ts')
       }
     ]
+  },
+  optimizeDeps: {
+    esbuildOptions: {
+      plugins: [esbuildCommonjs(['react-moment'])]
+    }
   }
 })

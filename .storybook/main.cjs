@@ -24,7 +24,8 @@ module.exports = {
     );
 
     return mergeConfig(config, {
-      ...userConfig
+      ...userConfig,
+      plugins: []
     });
 
   }

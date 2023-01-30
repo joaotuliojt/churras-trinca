@@ -4,7 +4,7 @@ import * as S from './styles'
 import * as yup from 'yup'
 import { useForm } from 'react-hook-form'
 import { yupResolver } from '@hookform/resolvers/yup'
-import { redirect } from 'react-router-dom'
+import { useNavigate } from 'react-router-dom'
 
 interface LoginFormData {
   email: string
@@ -25,7 +25,10 @@ export function Login() {
   const onSubmitLogin = handleSubmit(async ({ email, password }) => {
     await new Promise((resolve) => setTimeout(resolve, 2000))
     console.log(email, password)
+    return redirect('/dashboard')
   })
+
+  const redirect = useNavigate()
 
   return (
     <S.Container>

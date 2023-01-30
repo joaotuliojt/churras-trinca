@@ -38,6 +38,9 @@ cd churras-trinca
 //Instale as dependências
 yarn install ou yarn
 
+//Rode a Fake Api
+yarn server
+
 //Rode a aplicação localmente
 yarn dev
 
@@ -45,8 +48,8 @@ yarn dev
 ```
 
 ## Links
-> Figma: https://www.figma.com/file/xIi1BspCEtaH0hGEp39XQL/Trinca-%7C-Churras?node-id=1%3A1780&t=6nBShmKLFG2kYrBs-1
-> Preview: TODO
+-  <a href="https://www.figma.com/file/xIi1BspCEtaH0hGEp39XQL/Trinca-%7C-Churras?node-id=1%3A1780&t=6nBShmKLFG2kYrBs-1" target="_blank">Figma</a>
+-  <a href="https://churras-trinca-theta.vercel.app/" target="_blank">Preview</a>
 
 ___
 <p align="center">

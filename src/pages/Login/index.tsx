@@ -1,5 +1,5 @@
-import { Button } from '../../Components/Button'
-import { Input } from '../../Components/Input'
+import { Button } from '@components/Button'
+import { Input } from '@components/Input'
 import * as S from './styles'
 import * as yup from 'yup'
 import { useForm } from 'react-hook-form'

@@ -1,4 +1,4 @@
-import { styled } from '../../../stitches.config'
+import { styled } from '@styles/stitches'
 
 export const Box = styled('div', {
   maxWidth: '600px',

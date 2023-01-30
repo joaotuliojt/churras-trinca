@@ -11,7 +11,8 @@
     "test": "vitest",
     "prepare": "husky install",
     "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook"
+    "build-storybook": "build-storybook",
+    "generate": "yarn plop --plopfile ./generators/plopfile.mjs"
   },
   "husky": {
     "hooks": {
@@ -63,6 +64,7 @@
     "husky": "^8.0.3",
     "jsdom": "^21.1.0",
     "lint-staged": "^13.1.0",
+    "plop": "^3.1.1",
     "prettier": "^2.8.3",
     "typescript": "^4.9.3",
     "vite": "^4.0.0",

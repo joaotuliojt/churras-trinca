@@ -1,4 +1,4 @@
-import { styled, keyframes } from '../../../stitches.config'
+import { styled, keyframes } from '@styles/stitches'
 
 const SpinnerAnimation = keyframes({
   '0%': {

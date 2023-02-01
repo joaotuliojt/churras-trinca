@@ -1,4 +1,4 @@
-import { styled } from '../../../stitches.config'
+import { styled } from '@styles/stitches'
 
 export const Wrapper = styled('div', {
   display: 'flex',
@@ -14,6 +14,7 @@ export const Input = styled('div', {
     fontSize: '1.6rem',
     outline: 'none',
     borderColor: 'rgb(0, 0 ,0)',
+    background: 'none',
     '&::placeholder': {
       color: '#595959'
     }
@@ -23,6 +24,20 @@ export const Input = styled('div', {
       true: {
         input: {
           borderColor: 'red'
+        }
+      }
+    },
+    theme: {
+      white: {
+        input: {
+          borderColor: '#FFF',
+          color: '#FFF'
+        }
+      },
+      black: {
+        input: {
+          borderColor: '#000',
+          color: '#000'
         }
       }
     }

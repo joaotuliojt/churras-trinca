@@ -39,6 +39,7 @@ export const resetCss = globalCss({
     fontSize: '1.6rem',
     width: '100%',
     minHeight: '100vh',
-    fontFamily: '$Raleway'
+    fontFamily: '$Raleway',
+    background: '$white'
   }
 })

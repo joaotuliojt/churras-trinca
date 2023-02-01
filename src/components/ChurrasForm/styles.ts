@@ -61,7 +61,11 @@ export const AddParticipant = styled('div', {
   gridTemplateColumns: '24.5rem 15.8rem',
   gap: '3rem',
   rowGap: '2rem',
-  marginBottom: '6rem'
+  marginBottom: '6rem',
+  '@media(max-width: 520px)': {
+    flexDirection: 'column',
+    display: 'flex'
+  }
 })
 
 export const WithDrink = styled('div', {
@@ -74,7 +78,10 @@ export const WithDrink = styled('div', {
 export const AddParticipantActions = styled('div', {
   gridColumnStart: '1',
   display: 'flex',
-  gap: '2rem'
+  gap: '2rem',
+  '@media(max-width: 390px)': {
+    flexDirection: 'column'
+  }
 })
 
 export const ParticipantsList = styled('div', {

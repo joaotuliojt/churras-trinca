@@ -17,6 +17,20 @@ export const Basic = Template.bind({})
 Basic.args = {
   date: new Date(),
   description: 'A description',
-  total: 200.4,
-  totalParticipants: 6
+  comments: 'A comment',
+  id: '1',
+  participants: [
+    {
+      id: '1',
+      name: 'Jhon',
+      value: 30.2,
+      withDrink: false
+    },
+    {
+      id: '2',
+      name: 'Maria',
+      value: 30.2,
+      withDrink: true
+    }
+  ]
 }

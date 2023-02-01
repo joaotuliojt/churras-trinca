@@ -1,0 +1,72 @@
+// Vitest Snapshot v1
+
+exports[`<Header /> > should remove text in mobile 1`] = `
+<header
+  class="c-jiJVMe"
+>
+  <div
+    class="c-cYHMdr"
+  >
+    <div
+      class="c-bJztdh"
+    >
+      <img
+        alt=""
+        src="/assets/trinca.svg"
+      />
+      <p>
+        Agenda de churras
+      </p>
+    </div>
+    <div
+      class="c-cBoDjz"
+    >
+      <a
+        href="/"
+      >
+        <svg
+          fill="currentColor"
+          height="20"
+          viewBox="0 0 256 256"
+          width="20"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <rect
+            fill="none"
+            height="256"
+            width="256"
+          />
+          <polyline
+            fill="none"
+            points="174 86 216 128 174 170"
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="16"
+          />
+          <line
+            fill="none"
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="16"
+            x1="104"
+            x2="216"
+            y1="128"
+            y2="128"
+          />
+          <path
+            d="M104,216H48a8,8,0,0,1-8-8V48a8,8,0,0,1,8-8h56"
+            fill="none"
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="16"
+          />
+        </svg>
+        Sair
+      </a>
+    </div>
+  </div>
+</header>
+`;

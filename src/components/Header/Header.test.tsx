@@ -9,10 +9,8 @@ describe('<Header />', () => {
       wrapper: BrowserRouter
     })
 
-    console.log(container.style)
-
     expect(getByText('Agenda de churras')).toBeInTheDocument()
-    window.resizeTo(460, 1280)
+    //window.resizeTo(460, 1280)
     //Stitches dont has support to get Styles
     //expect(getByText('Agenda de churras')).toHaveStyle('display: none;')
     expect(container.firstChild).toMatchSnapshot()

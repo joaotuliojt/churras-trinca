@@ -47,7 +47,6 @@ yarn dev
 //Clique no link que surgir em seu terminal
 ```
 
-## Links
 -  <a href="https://www.figma.com/file/xIi1BspCEtaH0hGEp39XQL/Trinca-%7C-Churras?node-id=1%3A1780&t=6nBShmKLFG2kYrBs-1" target="_blank">Figma</a>
 -  <a href="https://churras-trinca-theta.vercel.app/" target="_blank">Preview</a>
 

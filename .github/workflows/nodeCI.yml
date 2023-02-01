@@ -18,7 +18,7 @@ jobs:
           node-version: "16.x"
       - run: yarn install --frozen-lockfile
       - run: yarn build
-      - run: yarn test --run
+      - run: yarn test --run --update
 
       - name: Code Coverage
         uses: codecov/codecov-action@v1

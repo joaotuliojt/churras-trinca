@@ -20,7 +20,8 @@ export default defineConfig({
         find: '@styles/stitches',
         replacement: path.resolve(__dirname, './src/styles/stitches.ts')
       }
-    ]
+    ],
+    mainFields: []
   },
   optimizeDeps: {
     esbuildOptions: {

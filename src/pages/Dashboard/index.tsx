@@ -1,10 +1,14 @@
 import { BarbecueCard } from '@/components/BarbecueCard'
+import { ChurrasForm } from '@/components/ChurrasForm'
+import { Drawer } from '@/components/Drawer'
 import Header from '@/components/Header'
 import { api } from '@/services/api'
 import { useQuery } from '@tanstack/react-query'
+import { useState } from 'react'
 import * as S from './styles'
 
-interface IParticipant {
+export interface IParticipant {
+  id: string
   name: string
   value: number
   withDrink: boolean
@@ -12,20 +16,14 @@ interface IParticipant {
 
 export interface IBarbecue {
   id: string
-  date: Date
+  date: Date | string
   description: string
   comments: string
-  total: number
-  values: {
-    withDrinks: number
-    withoutDrinks: number
-  }
   participants: IParticipant[]
-  totalParticipants: number
 }
 
 export function Dashboard() {
-  const { data: barbecues } = useQuery<IBarbecue[]>({
+  const { data: barbecues, refetch } = useQuery<IBarbecue[]>({
     queryKey: ['barbecues'],
     queryFn: async () => {
       const { data } = await api.get<IBarbecue[]>(
@@ -34,6 +32,31 @@ export function Dashboard() {
       return data
     }
   })
+
+  const [drawerIsOpen, setDrawerIsOpen] = useState(false)
+  const [selectedBarbecue, setSelectedBarbecue] = useState<IBarbecue>()
+
+  const setDrawerTitle = () => {
+    if (selectedBarbecue) {
+      return 'Editar churras'
+    } else {
+      return 'Novo churras'
+    }
+  }
+
+  const handleSelectBarbecue = (barbecue: IBarbecue) => {
+    setSelectedBarbecue(barbecue)
+    setDrawerIsOpen(true)
+  }
+
+  const handleCloseDrawer = () => {
+    setDrawerIsOpen(false)
+    setSelectedBarbecue(undefined)
+  }
+
+  const handleMakeRefetch = async () => {
+    await refetch()
+  }
 
   return (
     <>
@@ -47,17 +70,37 @@ export function Dashboard() {
           </p>
         </S.PageDescription>
         <S.GridContainer>
-          <S.AddChurrasCard>
+          <S.AddChurrasCard
+            onClick={() => {
+              setDrawerIsOpen(true)
+              setSelectedBarbecue(undefined)
+            }}
+          >
             <div>
-              <img src="/assets/bbq_icon.svg" alt="" />
+              <img src="/assets/icons/bbq_icon.svg" alt="" />
               <p>Adicionar Churras</p>
             </div>
           </S.AddChurrasCard>
           {barbecues?.map((barbecue) => (
-            <BarbecueCard key={barbecue.id} {...barbecue} />
+            <BarbecueCard
+              onSelect={handleSelectBarbecue}
+              key={barbecue.id}
+              {...barbecue}
+            />
           ))}
         </S.GridContainer>
       </S.Container>
+      <Drawer
+        isOpen={drawerIsOpen}
+        onClose={handleCloseDrawer}
+        title={setDrawerTitle()}
+      >
+        <ChurrasForm
+          refetch={handleMakeRefetch}
+          barbecue={selectedBarbecue}
+          onCancel={handleCloseDrawer}
+        />
+      </Drawer>
     </>
   )
 }

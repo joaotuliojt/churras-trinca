@@ -1,14 +1,22 @@
-import { ComponentPropsWithRef } from 'react'
+import { ComponentPropsWithRef, ReactNode } from 'react'
 import { CircleNotch } from 'phosphor-react'
 import * as S from './styles'
 
 interface ButtonProps extends ComponentPropsWithRef<'button'> {
   loading?: boolean
+  variant?: 'primary' | 'secondary' | 'outline'
+  leftIcon?: ReactNode
 }
 
-export function Button({ loading, children, ...rest }: ButtonProps) {
+export function Button({
+  variant = 'primary',
+  loading,
+  children,
+  leftIcon,
+  ...rest
+}: ButtonProps) {
   return (
-    <S.Button>
+    <S.Button variant={variant} withIcon={true}>
       <button {...rest}>
         {loading ? (
           <CircleNotch
@@ -18,7 +26,9 @@ export function Button({ loading, children, ...rest }: ButtonProps) {
             height={32}
           />
         ) : (
-          <>{children}</>
+          <>
+            {leftIcon && <>{leftIcon}</>} {children}
+          </>
         )}
       </button>
     </S.Button>

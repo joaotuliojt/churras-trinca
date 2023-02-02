@@ -47,9 +47,12 @@ yarn dev
 //Clique no link que surgir em seu terminal
 ```
 
+## Links
 -  <a href="https://www.figma.com/file/xIi1BspCEtaH0hGEp39XQL/Trinca-%7C-Churras?node-id=1%3A1780&t=6nBShmKLFG2kYrBs-1" target="_blank">Figma</a>
 -  <a href="https://churras-trinca-theta.vercel.app/" target="_blank">Preview</a>
 
+## Observações:
+O link do preview apenas é possível visualizar os dados, não será possível salvar ou editar por ele, estou utilizando uma fake-api que apenas funciona métodos de GET no preview, caso queira realmente editar as informações rode localmente a aplicação juntamente com o json-server :D
 ___
 <p align="center">
   <img width="100px" src="./public/assets/joaotul.png"/>
